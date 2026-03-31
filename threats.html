@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Safety Basics | Threats</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="tablet">
+        <header>
+            <h1 id="typewriter">internet safety basics</h1>
+            <p>Common Online Threats</p>
+        </header>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="threats.html">Threats</a>
+            <a href="safety.html">Safety</a>
+        </nav>
+
+        <main class="grid-container">
+            <div class="box grid-item clickable" onclick="this.classList.toggle('active')">
+                <div class="box-header">1. Fake Emails (Phishing)</div>
+                <div class="box-content">
+                    <p>This is when a hacker sends an email that looks like it's from Netflix, Amazon, or your Bank. They want you to click a link and type in your password so they can steal it.</p>
+                </div>
+                <div class="example-section">
+                    <p style="color: #ff4d4d;">[!] INCOMING TRAP:</p>
+                    <p>FAKE: support@PayPa1.com</p>
+                    <p>REAL: service@paypal.com</p>
+                    <p>> Analysis: The "1" replaces the "l" to deceive your eyes.</p>
+                </div>
+                <div class="click-hint">▼ VIEW EXAMPLE</div>
+            </div>
+
+            <div class="box grid-item clickable" onclick="this.classList.toggle('active')">
+                <div class="box-header">2. Scary Pop-ups (Scareware)</div>
+                <div class="box-content">
+                    <p>Have you ever seen a window say "YOUR COMPUTER HAS 50 VIRUSES"? Usually, that window <em>is</em> the virus. They want you to click it so they can install bad software on your computer.</p>
+                </div>
+                <div class="example-section">
+                    <p>> SYSTEM_ALERT: "URGENT! 48 Threats Detected. Click to scan now."</p>
+                    <p>> FACT: Websites cannot scan your hard drive. This is a mental trick to induce panic.</p>
+                </div>
+                <div class="click-hint">▼ VIEW EXAMPLE</div>
+            </div>
+
+            <div class="box grid-item clickable" onclick="this.classList.toggle('active')">
+                <div class="box-header">3. Public Wi-Fi Dangers</div>
+                <div class="box-content">
+                    <p>On an unencrypted Wi-Fi network, a hacker can sit "in the middle" of your connection. Everything you type—including passwords—passes through their computer before it reaches the website.</p>
+                </div>
+                <div class="example-section">
+                    <p>> Network Sniffing in progress...</p>
+                    <p>> Unsecured WiFi allows anyone on the same router to "see" your raw data packets as they fly through the air.</p>
+                </div>
+                <div class="click-hint">▼ VIEW EXAMPLE</div>
+            </div>
+
+            <div class="box grid-item clickable" onclick="this.classList.toggle('active')">
+                <div class="box-header">4. Credential Stuffing</div>
+                <div class="box-content">
+                    <p>When a major company has a data breach, hackers take the list of stolen emails and passwords and "stuff" them into other login pages (like Instagram or Banks) using automated bots.</p>
+                </div>
+                <div class="example-section">
+                    <p>> [Bot Script]: Running stolen_passwords.txt against gmail.com...</p>
+                    <p>> Why it works: Most people use the exact same password for every site they visit.</p>
+                </div>
+                <div class="click-hint">▼ VIEW EXAMPLE</div>
+            </div>
+
+            <div class="box grid-item clickable" onclick="this.classList.toggle('active')">
+                <div class="box-header">5. Dangerous Downloads</div>
+                <div class="box-content">
+                    <p>Downloading "cracked" games or free movies can hide a Trojan. This is a program that looks helpful but actually creates a "back door" for hackers to control your computer.</p>
+                </div>
+                <div class="example-section">
+                    <p>> File: Free_Game_Installer.exe</p>
+                    <p>> Hidden payload: Remote_Access_Tool.dll</p>
+                    <p>> Result: Hacker now has full control of your webcam and files.</p>
+                </div>
+                <div class="click-hint">▼ VIEW EXAMPLE</div>
+            </div>
+
+            <div class="box grid-item clickable" onclick="this.classList.toggle('active')">
+                <div class="box-header">6. Social Media Over-sharing</div>
+                <div class="box-content">
+                    <p>Posting your location, your birthday, or your pet's name gives hackers the answers to your "Security Questions." They can use this info to reset your passwords without you knowing.</p>
+                </div>
+                <div class="example-section">
+                    <p>> Data Mining Social Profile...</p>
+                    <p>> Answer found: High School = [MET High School]</p>
+                    <p>> Answer found: Pet Name = [Morgana]</p>
+                </div>
+                <div class="click-hint">▼ VIEW EXAMPLE</div>
+            </div>
+
+            <div class="box grid-item clickable" onclick="this.classList.toggle('active')">
+                <div class="box-header">7. Text Message Scams (Smishing)</div>
+                <div class="box-content">
+                    <p>Getting a text saying "Your USPS package is delayed, click here" is a common scam. These links take you to fake sites designed to steal your credit card info.</p>
+                </div>
+                <div class="example-section">
+                    <p>> INCOMING SMS: "USPS: We have a package with no name. Visit usps-check-id.com to claim."</p>
+                    <p>> Danger: The site looks 100% real but belongs to a thief.</p>
+                </div>
+                <div class="click-hint">▼ VIEW EXAMPLE</div>
+            </div>
+
+            <div class="box grid-item clickable" onclick="this.classList.toggle('active')">
+                <div class="box-header">8. Identity Theft</div>
+                <div class="box-content">
+                    <p>This is the "End Game." Once a hacker has your name, social security number, or bank login, they can pretend to be you to take out loans or buy things in your name.</p>
+                </div>
+                <div class="example-section">
+                    <p>> Identity Status: COMPROMISED</p>
+                    <p>> Consequences: Ruined credit, drained bank accounts, and years of legal work to fix.</p>
+                </div>
+                <div class="click-hint">▼ VIEW EXAMPLE</div>
+            </div>
+        </main>
+
+        <footer>Franco Ruiz · 2026 Senior Thesis Project</footer>
+    </div>
+
+    <script>
+        const h1 = document.getElementById('typewriter');
+        const text = h1.innerText; h1.innerHTML = ''; let i = 0;
+        function type() { 
+            if (i < text.length) { 
+                h1.innerHTML += text.charAt(i) === ' ' ? '&nbsp;' : text.charAt(i); 
+                i++; 
+                setTimeout(type, 100); 
+            } 
+        }
+        type();
+    </script>
+</body>
+</html>

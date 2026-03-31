@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Safety Basics | Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="tablet">
+        <header>
+            <h1 id="typewriter">internet safety basics</h1>
+            <p>Home Page</p>
+        </header>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="threats.html">Threats</a>
+            <a href="safety.html">Safety</a>
+        </nav>
+
+        <main>
+            <div class="column">
+                <div class="box">
+                    <div class="box-header">Mission</div>
+                    <div class="box-content">
+                        <p>The internet is no longer just a tool, it is where we work, and connect. However, as our lives move online, so do the risks. Internet Safety Basics was created to bridge the gap between complex technical jargon and everyday online safety. This project focuses on empowering users to understand not just what threats exist, but how they function and how to stop them.</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="box-header">Why This Matters Now</div>
+                    <div class="box-content">
+                        <p>With the rise of AI-driven scams and sophisticated data breaches, traditional security methods are often not enough. Understanding modern "cyber stacks" is the first step toward building a truly secure digital footprint.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column right">
+                <div class="box">
+                    <div class="box-header">The Three Pillars of Digital Security</div>
+                    <div class="box-content">
+                        <ul class="box-list">
+                            <li><span class="date">1.</span> <strong>Awareness</strong><br>Recognizing the psychological tricks hackers use to manipulate users.</li>
+                            <li><span class="date">2.</span> <strong>Protection</strong><br>Implementing technical barriers like encryption and multi-factor authentication.</li>
+                            <li><span class="date">3.</span> <strong>Resilience</strong><br>Developing habits that ensure even if one layer of security fails, your entire life isn't compromised.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>Franco Ruiz · 2026 Senior Thesis Project</footer>
+    </div>
+
+    <script>
+        const h1 = document.getElementById('typewriter');
+        const text = h1.innerText; h1.innerHTML = ''; let i = 0;
+        function type() { 
+            if (i < text.length) { 
+                h1.innerHTML += text.charAt(i) === ' ' ? '&nbsp;' : text.charAt(i); 
+                i++; 
+                setTimeout(type, 100); 
+            } 
+        }
+        type();
+    </script>
+</body>
+</html>
